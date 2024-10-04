@@ -1,5 +1,5 @@
 <?php
-$url = 'https://jsonplaceholder.typicode.com/posts';
+$url = 'https://jsonplaceholder.typicode.com/users';
 $respon = file_get_contents($url);
 $data = json_decode($respon, true)
 ?>
@@ -12,13 +12,16 @@ $data = json_decode($respon, true)
   <title>Praktikum API</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<h1>Data Posts dari jsonplaceholder API (PHP)</h1>
+<h1>Data users dari jsonplaceholder API (PHP)</h1>
 <table>
   <thead>
     <tr>
       <th>ID</th>
-      <th>Title</th>
-      <th>Body</th>
+      <th>nama</th>
+      <th>username</th>
+      <th>email</th>
+      <th>alamat</th>
+      <th>ip hp</th>
     </tr>
   </thead>
   <tbody>
